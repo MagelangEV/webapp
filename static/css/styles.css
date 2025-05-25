@@ -1,1 +1,151 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
 
+/* Custom scrollbar for product grid */
+.product-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.product-scroll::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+  border-radius: 10px;
+}
+
+/* Hide scrollbar for all browsers */
+.product-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; transform: translateX(20px); }
+}
+
+.cart-item-remove {
+  transition: all 0.3s ease;
+  animation: fadeOut 0.3s forwards;
+}
+
+/* Responsive button layout */
+@media (max-width: 640px) {
+  .cart-actions {
+    flex-direction: column;
+  }
+  .cart-actions button {
+    width: 100%;
+  }
+  .cart-actions button:first-child {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Receipt Modal Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#receipt-modal > div {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Loading Spinner */
+.fa-spinner {
+  margin-right: 8px;
+}
+
+/* Shipping Form Styles */
+#checkout-form-modal input,
+#checkout-form-modal textarea {
+  transition: all 0.3s ease;
+}
+
+#checkout-form-modal input:focus,
+#checkout-form-modal textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 1px #6366f1;
+}
+
+/* Receipt Shipping Info */
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
+/* WhatsApp Button Styles */
+.bg-green-600 {
+  background-color: #25D366;
+}
+
+.hover\:bg-green-700:hover {
+  background-color: #128C7E;
+}
+
+.fa-whatsapp {
+  margin-right: 8px;
+}
+/* Untuk layout tombol yang responsif */
+@media (max-width: 640px) {
+    .cart-actions {
+        flex-direction: column;
+    }
+    .cart-actions button {
+        width: 100%;
+    }
+    .cart-actions button:first-child {
+        margin-bottom: 0.75rem;
+    }
+}
+/* Receipt Modal Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#receipt-modal > div {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Loading Spinner */
+.fa-spinner {
+    margin-right: 8px;
+}
+/* Shipping Form Styles */
+#checkout-form-modal input,
+#checkout-form-modal textarea {
+    transition: all 0.3s ease;
+}
+
+#checkout-form-modal input:focus,
+#checkout-form-modal textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 1px #6366f1;
+}
+
+/* Receipt Shipping Info */
+.whitespace-pre-line {
+    white-space: pre-line;
+}
+/* Shipping Form Styles */
+#checkout-form-modal input,
+#checkout-form-modal textarea {
+    transition: all 0.3s ease;
+}
+
+#checkout-form-modal input:focus,
+#checkout-form-modal textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 1px #6366f1;
+}
+
+/* Receipt Shipping Info */
+.whitespace-pre-line {
+    white-space: pre-line;
+}
